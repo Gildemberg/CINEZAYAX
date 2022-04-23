@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Cinzel&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*=========================================================================================================================================================================*/
+
+#cabecalho {
+    background-color: rgb(32, 32, 32);
+    padding: 10px;
+}
+
+#cabecalho #redes{
+    color: white;
+    display: inline;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    margin-left: 50px;
+}
+
+#cabecalho #redes li{
+    display: inline;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+#cabecalho #redes li a {
+    font-size: 16px;
+    margin-left: 3px;
+    color: white;
+    text-decoration: none;
+}
+
+#cabecalho #menu1{
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px;
+    display: inline;
+    margin-left: 750px;
+}
+
+#cabecalho #menu1 li{
+    padding: 12px;
+    display: inline;
+}
+
+#cabecalho #menu1 a{
+    text-decoration: none;
+    color: white;
+}
+
+/*=========================================================================================================================================================================*/
+
+#subcabecalho {
+    text-align: center;
+    background-color: #000;
+}
+
+#subcabecalho #logo {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/*MENU*/
+#subcabecalho #menu2 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+#subcabecalho #menu3 {
+    margin-left: 100px;
+}
+
+#subcabecalho #menu3 a{
+    vertical-align: middle;
+}
+        
+#subcabecalho #menu2 li {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+#subcabecalho #menu2 li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px 13px;
+    display: block;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#subcabecalho #menu2 li:hover {
+    background-color: rgb(121, 0, 0);
+    transition: all 0.3s linear;
+}
+
+
+/* SUB MENU */
+#subcabecalho #menu2 li:hover>.submenu{
+    display: block;
+}
+
+#subcabecalho #menu2 .submenu{
+    display: none;
+    background-color: rgb(121, 0, 0, 0.9);
+    width: 100%;
+    position: absolute;
+    left: 0;
+
+}
+
+#subcabecalho #menu2 .submenu li{
+    transition: 0.3s;
+    width: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+#subcabecalho #menu2 .submenu li:hover{
+    background-color: rgba(52, 0, 0, 0.9);
+    transition: all 0.3 linear;
+}
+
+
+/*=========================================================================================================================================================================*/
+
+#corpo {
+    margin: 0 auto;
+    background-color: #000;
+}
+
+#corpo .banner img {
+    display: block;
+    width: 100%;
+}
+
+#corpo h2 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    margin-top: 18px;
+    background-clip: content-box;
+    background-color: black;
+    border: 100px white;
+}
+
+#corpo #galeria {
+    display: block;
+    margin: 0 auto;
+}
+
+#corpo #galeria li {
+    margin: 50px;
+    display: inline-block;
+}
+
+#corpo #galeria a {
+    display: inline;
+}    
+
+#corpo #galeria img {
+    width: 200px;
+    height: 290px;
+    display: inline;
+    border-radius: 12px;
+}
+
+#corpo #galeria .class {
+    background: #fbb034;
+    border-radius: 0 5px 5px 0;
+    color: #b5121b;
+    font-size: 8px;
+    height: 24px;
+    width: 80px;
+    left: -2px;
+    padding: 6px 8px 6px 12px;
+    position: relative;
+    top: 8px;
+    z-index: 1;
+    display: block;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+    line-height: 1.8;
+    text-transform: uppercase;
+}
+
+#rodape {
+    background-color: rgb(32, 32, 32);
+    display: block;
+    margin: 0 auto;
+}
+
+#rodape #redes_r {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#rodape #redes_r ul li .icon {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+#rodape #redes_r ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+#rodape #redes_r ul {
+    border-bottom: 1px solid rgb(77, 77, 77);
+}
+
+#rodape #redes_r ul li {
+    display: inline-flex;
+    margin: 15px;
+}
+
+
+
+
+
+
+#rodape #rodape_r {
+    display: block;
+    text-align: center;
+}
+
+
+#rodape #rodape_r ul li {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+#rodape #rodape_r ul li img{
+    width: 130px;
+}
