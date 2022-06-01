@@ -1,150 +1,280 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <script src="https://kit.fontawesome.com/0bb17884b2.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+        
         <link rel="stylesheet" href="cine.css">
-        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
         <title>CineZayaX</title>
+
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+
+        <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+        <script src="plugins/jquery.min.js"></script>
+        <script src="plugins/jquery.bxslider.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+              $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                slideWidth: 1200,
+                auto: true,
+                pager: true,
+                //speed: 100
+              });
+            });
+        </script>
     </head>
     <body>
         <header>
-        <nav id="cabecalho"> 
-            <ul id="redes">
-                <li>REDES SOCIAIS</li>
-                <li><a href="https://twitter.com" class="fa-brands fa-twitter" target="_blank"></a></li>
-                <li><a href="https://www.instagram.com" class="fa-brands fa-instagram" target="_blank"></a></li>
-                <li><a href="https://pt-br.facebook.com" class="fa-brands fa-facebook-f" target="_blank"></a></li>
-                <li><a href="https://web.whatsapp.com" class="fa-brands fa-whatsapp" target="_blank"></a></il>
-                <li><a href="https://linkedin.com" class="fa-brands fa-linkedin-in" target="_blank"></a></li>
-                </ul>
-                
-                <ul id="menu1">
-                    <li><a href="#subcabecalho">MENU</a></li>
-                    <li><a href="#galeria">CONTEÚDO</a></li>
-                    <li><a href="#">SOBRE NÓS</a></li>
-                    <li><a href="#">CONTATO</a></li>
-                    <li><a href="#">ACESSIBILIDADE</a></li>
-                </ul>			
-            </nav>
+            <nav> 
+                <div id="cabecalho_um">
+                    <ul>
+                        <li>REDES SOCIAIS</li>
+                        <li><a href="https://twitter.com" class="fa-brands fa-twitter" target="_blank"></a></li>
+                        <li><a href="https://www.instagram.com" class="fa-brands fa-instagram" target="_blank"></a></li>
+                        <li><a href="https://pt-br.facebook.com" class="fa-brands fa-facebook-f" target="_blank"></a></li>
+                        <li><a href="https://web.whatsapp.com" class="fa-brands fa-whatsapp" target="_blank"></a></il>
+                        <li><a href="https://linkedin.com" class="fa-brands fa-linkedin-in" target="_blank"></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#cabecalho_dois">MENU</a></li>
+                        <li><a href="#">CONTEÚDO</a></li>
+                        <li><a href="#">SOBRE NÓS</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                        <li><a href="#">ACESSIBILIDADE</a></li>
+                    </ul>
+                </div>
             
-            <div id="subcabecalho">
-                <img src="imagens/logo.png" id="logo">
-                <ul id="menu2">
-                    <li><a>PROGRAMAÇÃO</a>
-                        <ul class="submenu">
-                            <li><a href="#cartaz">Em Cartaz</a></li>
-                            <li><a href="#breve">Em Breve</a></li>
-                            <li><a href="">Cinema</a></li>
-                            <li><a href="">Ingresso</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li><a>+ PIPOCA</a>
-                        <ul class="submenu">
-                            <li><a>Cardápio</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li><a>MEU ZAYAX</a>
-                        <ul class="submenu">
-                            <li><a>Cartão CINEZAYAX</a></li>
-                        </ul>
-                    </li>
+                <div id="cabecalho_dois">
+                    <img src="imagens/logo.png" id="logo">
+                    <ul>
+                        <li>
+                            <a class="seta">PROGRAMAÇÃO</a>
+                            <ul class="submenu">
+                                <li><a href="#cartaz">Em Cartaz</a></li>
+                                <li><a href="#breve">Em Breve</a></li>
+                                <li><a href="">Cinema</a></li>
+                                <li><a href="">Ingresso</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="seta">+ PIPOCA</a>
+                            <ul class="submenu">
+                                <li><a>Cardápio</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="seta">MEU ZAYAX</a>
+                            <ul class="submenu">
+                                <li><a>Cartão CINEZAYAX</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
+        <section id="corpo">
+            <section id="banner">
+                    <ul class="slider">
+                        <li><img src="imagens/banner/1.jpg" title="TOP GUN"></li>
+                        <li><img src="imagens/banner/2.jpg" title="TOP GUN"></li>
+                        <li><img src="imagens/banner/3.jpg" title="TOP GUN"></li>
+                        <li><img src="imagens/banner/4.jpg" title="TOP GUN"></li>
+                    </ul>
+            </section>
+            
+            <h2>Filmes em cartaz</h2>
+            <section id="Rotacao_Um" class="filmes">
+                <div id="C1">
+                    <ul>
+                        <li>
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/animaisfantasticos.jpg"></a>
+                        </li>
+                        <li>   
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/morbius.jpg"></a>
+                        </li>
+                        <li>   
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/sonic.jpg"></a>
+                        </li>
+                        <li>
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/batman.jpg"></a>
+                        </li>
+                        <li>
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/cidadeperdida.jpg"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="C2">
+                    <ul>
+                        <li>
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/animaisfantasticos.jpg"></a>
+                        </li>
+                        <li>   
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/morbius.jpg"></a>
+                        </li>
+                        <li>   
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/sonic.jpg"></a>
+                        </li>
+                        <li>
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/batman.jpg"></a>
+                        </li>
+                        <li>
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/cidadeperdida.jpg"></a>
+                        </li>            
+                    </ul>
+                </div>
+                <div id="C3">
+                    <ul>
+                        <li>
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/animaisfantasticos.jpg"></a>
+                        </li>
+                        <li>   
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/morbius.jpg"></a>
+                        </li>
+                        <li>   
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/sonic.jpg"></a>
+                        </li>
+                        <li>
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/batman.jpg"></a>
+                        </li>
+                        <li>
+                            <span class="class">ESTREIA</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/cidadeperdida.jpg"></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2>Filmes em breve</h2>
+            <section id="Rotacao_Dois" class="filmes">
+                <div id="B1">
+                    <ul>
+                        <li>
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/thor.jpg"></a>
+                        </li>
+                            
+                        <li>   
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/thenorthman.jpg"></a>
+                        </li>
+                        
+                        <li>   
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/drestranho.jpg"></a>
+                        </li>
+                        
+                        <li>
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/topgun.jpg"></a>
+                        </li>
+                        
+                        <li>
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/panteranegra2.jpg"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="B2">
+                    <ul>
+                        <li>
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/thor.jpg"></a>
+                        </li>
+                            
+                        <li>   
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/thenorthman.jpg"></a>
+                        </li>
+                        
+                        <li>   
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/drestranho.jpg"></a>
+                        </li>
+                        
+                        <li>
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/topgun.jpg"></a>
+                        </li>
+                        
+                        <li>
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/panteranegra2.jpg"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="B3">
+                    <ul>
+                        <li>
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/thor.jpg"></a>
+                        </li>
+                            
+                        <li>   
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/thenorthman.jpg"></a>
+                        </li>
+                        
+                        <li>   
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/drestranho.jpg"></a>
+                        </li>
+                        
+                        <li>
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/topgun.jpg"></a>
+                        </li>
+                        
+                        <li>
+                            <span class="class">EM BREVE</span>
+                            <a target="_blank" href="#"><img src="imagens/filmes/panteranegra2.jpg"></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <footer id="rodape">
+            <div id="parte_um">
+                <ul>
+                    <li><a href="https://twitter.com" class="fa-brands fa-twitter icon" target="_blank"><a href="https://twitter.com" target="_blank">TWITTER <br> /CINEZAYAX</a></a></li>
+                    <li><a href="https://www.instagram.com" class="fa-brands fa-instagram icon" target="_blank" target="_blank"><a href="https://www.instagram.com">INSTAGRAM <br> /CINEZAYAX</a></a></li>
+                    <li><a href="https://pt-br.facebook.com" class="fa-brands fa-facebook-f icon" target="_blank" target="_blank"><a href="https://pt-br.facebook.com">FACEBOOK <br> /CINEZAYAX</a></a></li>
+                    <li><a href="https://web.whatsapp.com" class="fa-brands fa-whatsapp icon" target="_blank"><a href="https://web.whatsapp.com" target="_blank">WHATSAPP <br> /CINEZAYAX</a></a></il>
+                    <li><a href="https://linkedin.com" class="fa-brands fa-linkedin-in icon" target="_blank"><a href="https://linkedin.com" target="_blank">LINKEDIN <br> /CINEZAYAX</a></a></li>
                 </ul>
             </div>
-    </header>
-    <section id="corpo">
-        <div class="banner">
-            <img src="imagens/banner_animais.jpg">
-        </div>
-        
-        <h2 id="cartaz">Filmes em cartaz</h2>
-        
-        <div id="galeria">
-            <ul>
-                <li>
-                    <span class="class">Estreia</span>
-                    <a target="_blank" href="#"><img src="imagens/filmes/animaisfantasticos.jpg"></a>
-                </li>
-                
-                <li>   
-                    <span class="class">Estreia</span>
-                    <a target="_blank" href="#"><img src="imagens/filmes/morbius.jpg"></a>
-                </li>
-                
-                <li>   
-                    <span class="class">Estreia</span>
-                    <a target="_blank" href="#"><img src="imagens/filmes/sonic.jpg"></a>
-                </li>
-                
-                <li>
-                    <span class="class">Estreia</span>
-                    <a target="_blank" href="#"><img src="imagens/filmes/batman.jpg"></a>
-                </li>
-                
-                <li>
-                    <span class="class">Estreia</span>
-                    <a target="_blank" href="#"><img src="imagens/filmes/cidadeperdida.jpg"></a>
-                </li>
-            </ul>
 
-            <h2 id="breve">Filmes em breve</h2>
-        
-        <div id="galeria">
-            <ul>
-                <li>
-                    <span class="class">Em breve</span>
-                    <a target="_blank" href="#"><img src="imagens/filmes/thor.jpg"></a>
-                </li>
-                
-                <li>   
-                    <span class="class">Em breve</span>
-                    <a target="_blank" href="#"><img src="imagens/filmes/thenorthman.jpg"></a>
-                </li>
-                
-                <li>   
-                    <span class="class">Em breve</span>
-                    <a target="_blank" href="#"><img src="imagens/filmes/drestranho.jpg"></a>
-                </li>
-                
-                <li>
-                    <span class="class">Em breve</span>
-                    <a target="_blank" href="#"><img src="imagens/filmes/topgun.jpg"></a>
-                </li>
-                
-                <li>
-                    <span class="class">Em breve</span>
-                    <a target="_blank" href="#"><img src="imagens/filmes/panteranegra2.jpg"></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <footer id="rodape">
-        <div id="redes_r">
-            <ul>
-                <li><a href="https://twitter.com" class="fa-brands fa-twitter icon" target="_blank"><a href="https://twitter.com" target="_blank">TWITTER <br> /CINEZAYAX</a></a></li>
-                <li><a href="https://www.instagram.com" class="fa-brands fa-instagram icon" target="_blank" target="_blank"><a href="https://www.instagram.com">INSTAGRAM <br> /CINEZAYAX</a></a></li>
-                <li><a href="https://pt-br.facebook.com" class="fa-brands fa-facebook-f icon" target="_blank" target="_blank"><a href="https://pt-br.facebook.com">FACEBOOK <br> /CINEZAYAX</a></a></li>
-                <li><a href="https://web.whatsapp.com" class="fa-brands fa-whatsapp icon" target="_blank"><a href="https://web.whatsapp.com" target="_blank">WHATSAPP <br> /CINEZAYAX</a></a></il>
-                <li><a href="https://linkedin.com" class="fa-brands fa-linkedin-in icon" target="_blank"><a href="https://linkedin.com" target="_blank">LINKEDIN <br> /CINEZAYAX</a></a></li>
-            </ul>
-        </div>
-
-        <div id="rodape_r">
-            <ul>
-                <li><img src="imagens/logo1.png"></li> <BR>
-                <li>Project by @Gildemberg</li>
-            </ul>
-        </div>
-    </footer>
+            <div id="parte_dois">
+                <ul>
+                    <li><img src="imagens/logo1.png"></li> <BR>
+                </ul>
+            </div>
+        </footer>
 
 </body>
 </html> 
